@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222222;
+    color:#F5F5F5;
+}
+
+header {
+    color: #4ae44a; 
+    padding: 10px 20px; 
+    margin: 20px; 
+    position: relative; 
+}
+
+nav {
+    position: absolute;
+    top: 50%; 
+    left: 0; 
+    width: 100%; 
+    transform: translateY(-50%); 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    color: #F5F5F5; 
+    text-decoration: none; 
+    font-size: 30px; 
+    padding: 5px 10px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    background-color: #F5F5F5; 
+    color: #000000; 
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    text-decoration: none; 
+}
+
+.image-container {
+    width: 100%; 
+    height: 800px; 
+    overflow: hidden; 
+    margin: 20px auto; 
+    border-radius: 20px; 
+
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+main{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.about {
+    font-size: 28px; 
+    line-height: 1.6; 
+}
+
+#imgofme {
+    float: left; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    overflow: hidden; 
+    margin-right: 10px;
+}
+
+.about_me h1{
+    text-align: center;
+}
+
+.skilsimage {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.skilsimage img {
+    margin: 10px; 
+    width: 200px; 
+    height: auto; 
+}
+.skills h2{
+    text-align: center;
+}
+
+.experiences h2{
+    text-align: center;
+}
+footer {
+    background-color: #202020;
+    color: #4ae44a; 
+    text-align: center; 
+    padding: 10px 0; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+}
