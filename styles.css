@@ -1,4 +1,4 @@
-
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +9,18 @@ body {
     background-image: url(background.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
+    background-color: #222222;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #222222;
-    color:#F5F5F5;
+    color: #F5F5F5;
 }
 
+/* Header Styles */
 header {
     color: #4ae44a; 
     padding: 10px 20px; 
     margin: 20px; 
-    position: relative; 
+    position: relative;
 }
 
 nav {
@@ -27,100 +28,219 @@ nav {
     top: 50%; 
     left: 0; 
     width: 100%; 
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
 }
 
 nav ul {
     list-style: none; 
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px; 
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #F5F5F5; 
-    text-decoration: none; 
-    font-size: 30px; 
-    padding: 5px 10px; 
-    transition: color 0.3s ease; 
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #F5F5F5; 
-    color: #000000; 
-    border-radius: 20px; 
-    padding: 5px 10px; 
-    text-decoration: none; 
+    background-color: #F5F5F5;
+    color: #000000;
+    border-radius: 20px;
 }
 
+/* Image Container Styles */
 .image-container {
-    width: 100%; 
-    height: 800px; 
-    overflow: hidden; 
-    margin: 20px auto; 
-    border-radius: 20px; 
-
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 20px;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
 }
-main{
-    margin-left: 200px;
-    margin-right: 200px;
+
+/* Main Content Styles */
+main {
+    margin: 0 200px;
+    padding-bottom: 100px;
 }
+
 .about {
-    font-size: 28px; 
-    line-height: 1.6; 
+    font-size: 28px;
+}
+
+.about_me h2 {
+    text-align: left;
+}
+
+.about_me p {
+    padding-bottom: 25px;
 }
 
 #imgofme {
-    float: left; 
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    overflow: hidden; 
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
     margin-right: 10px;
 }
 
-.about_me h1{
-    text-align: center;
+/* Skills Section Styles */
+.skills {
+    text-align: left;
 }
 
-.skilsimage {
+.skills-image {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; 
-    align-items: center; 
-    padding: 20px; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px;
 }
 
-.skilsimage img {
-    margin: 10px; 
-    width: 200px; 
-    height: auto; 
-}
-.skills h2{
-    text-align: center;
+.skills-image img {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease; /* Transition for hover effect */
 }
 
-.experiences h2{
-    text-align: center;
+.skills-image img:hover {
+    transform: scale(1.1); /* Scale up on hover by 10% */
 }
+
+/* Experiences Section Styles */
+.experiences h2 {
+    text-align: left;
+}
+
+/* Design Section Styles */
+.design-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-content {
+    padding: 1.75rem;
+    background: #1f1f1f;
+    box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+    border-radius: 6px;
+    color: white;
+    margin: 100px 20px 20px;
+}
+
+/* Projects Section Styles */
+#projects {
+    padding-bottom: 30px;
+}
+
+#projects h2 {
+    text-align: left;
+}
+
+.project-container {
+    text-align: center; /* Center the content */
+    margin: 20px; /* Add some margin around the container */
+    border: 2px solid #ffffff; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the container */
+    display: inline-block; /* Allows the container to fit around the image */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.project-container img {
+    width: 300px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Rounded corners for the image */
+}
+
+.project-container:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+.caption {
+    font-style: italic; /* Style for the caption */
+    color: #666; /* Caption color */
+    margin-top: 5px; /* Space above the caption */
+}
+
+/* Footer Styles */
 footer {
     background-color: #202020;
-    color: #4ae44a; 
-    text-align: center; 
-    padding: 10px 0; 
-    position: fixed; 
-    width: 100%; 
-    bottom: 0; 
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.social {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons */
+    padding: 10px 0; /* Padding around the social icons */
+    list-style: none; /* Hide the bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.social li {
+    margin: 0 15px; /* Space between icons */
+}
+
+.social img {
+    width: 30px; /* Set the desired width for icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.social img:hover {
+    transform: scale(2); /* Scale up on hover */
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+    }
+    
+    .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        width: 3px;
+        height: 100%;
+    }
+
+    .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #F27121, #E94057, #8A2387);
+        transform: translateX(-50%);
+    }
 }

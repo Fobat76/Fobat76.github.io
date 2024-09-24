@@ -1,77 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Devin Chen - Personal Website</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class ="heading">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devin Chen - Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#experiences">Experiences</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
-            </div>
-        </header>
-
-        <!-- Introduction Section -->
-        <div class="image-container">
-            <img src="https://science.nasa.gov/wp-content/uploads/2023/09/ssc2006-02a-0.jpg?w=2048&format=webp">
         </div>
+    </header>
 
-        <main>
-            <div class ="about">
-                <div class = "about_me">
-                    <h1>About Me:</h1>
-                    <img id = "imgofme" src ="https://media.licdn.com/dms/image/v2/D4E03AQGgRXhQxsXBfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725747195609?e=1732147200&v=beta&t=EGX0PHoGjvFyIUNxKT2Au8a4dEgw-Qd-bVHo6aKT52k">
-                    <p>Hi, my name is Devin I’m currently studying Computer Science at CUNY Hunter College. My interest in tech kicked off in fourth grade when I 
-                        joined the LEGO Robotics Club at PS94. That experience got me really into coding and engineering. In 2015, I competed in the First LEGO League
-                        with my team at PS94, and we did pretty well in my opinion. I've always been into STEM as a child. Back in middle school, I worked on an app project 
-                        where we created a simple medical diagnostic quiz app. It wasn't the most sophisticated app, but it was a lot of fun to work on. Now that I’m in college, 
-                        I’m continuing to explore my passion for programming and developing my skills.</p>
-                        <br>
-                </div>
-                <hr>
-                <br>
-                <!-- Skills Section -->
-                <div class="skills" id="skills">
-                    <h2>My Skills</h2>
-                    <div class ="skilsimage">
-                        <img alt="CPP" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>
-                        <img alt="Python" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /></li>
-                        <img alt="MySQL" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-                        <img  alt="HTML" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
-                        <img alt="CSS" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-                        <img alt="LUA" width="200px" style="padding-right:40px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-plain.svg" />
-                    </div>
-                </div>
-                <hr>
-                <!-- Experiences Section -->
-                <div class="experiences" id="experiences">
-                    <h2>Experiences</h2>
-                    
-                    <!-- Content to be added here -->
-                </div>
+    <!-- Introduction Section -->
+    <div class="image-container">
+        <img src="https://science.nasa.gov/wp-content/uploads/2023/09/ssc2006-02a-0.jpg?w=2048&format=webp" alt="Introduction Image">
+    </div>
 
-                <!-- Contacts Section -->
-                <div class="contacts" id="contacts">
-                    <h2>Contact Me</h2>
-                    <!-- Content to be added here -->
+    <main>
+        <div class="about" id="about">
+            <div class="about_me">
+                <h2>About Me</h2>
+                <img id="imgofme" src="https://media.licdn.com/dms/image/v2/D4E03AQGgRXhQxsXBfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725747195609?e=1732147200&v=beta&t=EGX0PHoGjvFyIUNxKT2Au8a4dEgw-Qd-bVHo6aKT52k" alt="Devin Chen">
+                <p>Hi, my name is Devin I’m currently studying Computer Science at CUNY Hunter College. My interest in tech kicked off in fourth grade when I joined the LEGO Robotics Club at PS94. That experience got me really into coding and engineering. In 2015, I competed in the First LEGO League with my team at PS94, and we did pretty well in my opinion. I've always been into STEM as a child. Back in middle school, I worked on an app project where we created a simple medical diagnostic quiz app. It wasn't the most sophisticated app, but it was a lot of fun to work on. Now that I’m in college, I’m continuing to explore my passion for programming and developing my skills.</p>
+            </div>
+            <hr>
+
+            <!-- Skills Section -->
+            <div class="skills" id="skills">
+                <h2>My Skills</h2>
+                <div class="skills-image">
+                    <img alt="C++" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                    <img alt="Python" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                    <img alt="MySQL" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                    <img alt="HTML" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+                    <img alt="CSS" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                    <img alt="Lua" width="200" style="padding-right: 30px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-plain.svg" />
                 </div>
             </div>
-            <h1 style="font-size: 100px;">WORKING IN PROGRESS</h1>
-        </main>
+            <hr>
 
-        <footer>
-            <p>Devin Chen</p>
-        </footer>
-    </body>
+            <!-- Experiences Section -->
+            <div class="experiences" id="experiences">
+                <h2>Experiences</h2>
+                <section class="design-section">
+                    <div class="timeline">
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-component timeline-content">
+                            <h3>Link & Step Up</h3>
+                            <h6>Nov 2021 - May 2023 : 1yr 7 mos</h6>
+                            <p>Internship with CFL</p>
+                        </div>
+                        <div class="timeline-component timeline-content">
+                            <h3>Climate Justice Advocate</h3>
+                            <h6>July 2022 - Aug 2022 : 2 mos</h6>
+                            <p>Part-time with UPROSE</p>
+                        </div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-component timeline-content">
+                            <h3>Internship for PS.94</h3>
+                            <h6>Nov 2022 - June 2023 : 8 mos</h6>
+                            <p>Internship with CFL</p>
+                        </div>
+                        <div class="timeline-component timeline-content">
+                            <h3>Counselor in Training (CIT)</h3>
+                            <h6>July 2023 - Aug 2023 : 2 mos</h6>
+                            <p>Part-time with CFL</p>
+                        </div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-empty"></div>
+                        <div class="timeline-middle">
+                            <div class="timeline-circle"></div>
+                        </div>
+                        <div class="timeline-component timeline-content">
+                            <h3>Student at Hunter College</h3>
+                            <h6>Aug 2023 - Present</h6>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+
+            <!-- Projects Section -->
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="project-container">
+                    <a href="https://github.com/Fobat76/CSCi-235" target="_blank">
+                        <img src="https://tligorio.github.io/projects/project1/Intro.png" alt="CSCI 235 Projects">
+                    </a>
+                    <div class="caption">CSCI 235 Projects</div>
+                </div>
+                <div class="project-container">
+                    <a href="https://github.com/Fobat76/Responsive-Web-Design-Certification" target="_blank">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpCpzAlmrfzPB_q16Dbvq0IihxEcGEKTZFLA&s" alt="FreeCodeCamp Projects">
+                    </a>
+                    <div class="caption">FreeCodeCamp Projects</div>
+                </div>
+                <div class="project-container">
+                    <a href="https://github.com/Fobat76/Calculator" target="_blank">
+                        <img src="https://static.vecteezy.com/system/resources/previews/026/700/465/non_2x/mathematical-basic-symbols-math-concept-linear-minimal-icon-vector.jpg" alt="Basic Calculator Using Qt">
+                    </a>
+                    <div class="caption">Basic Calculator Using Qt</div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+
+    <footer>
+        <h6>Contacts</h6>
+        <ul class="social">
+            <li>
+                <a href="https://github.com/Fobat76" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/devin-c-612393248/" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+                </a>
+            </li>
+            <li>
+                <a href="mailto:contact.devinchen@gmail.com" target="_blank">
+                    <img src="https://www.svgrepo.com/show/14478/email.svg" alt="Email" />
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
 </html>
