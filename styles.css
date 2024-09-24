@@ -216,7 +216,7 @@ footer {
 }
 
 .social img:hover {
-    transform: scale(2); /* Scale up on hover */
+    transform: scale(1.2); /* Scale up on hover */
 }
 
 /* Media Queries */
